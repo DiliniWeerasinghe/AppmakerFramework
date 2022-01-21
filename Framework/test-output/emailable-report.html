@@ -9,11 +9,149 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">172,570</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">20,923</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.Appmaker.TestCases.CRM_Template</td><td><a href="#m0">LogintoApplication</a></td><td rowspan="1">1642757950381</td><td rowspan="1">73288</td></tr><tr class="passedeven"><td><a href="#m1">createNewCRMapp</a></td><td rowspan="1">1642758025393</td><td rowspan="1">83331</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Appmaker.TestCases.CRM_Template</td><td><a href="#m0">setup</a></td><td rowspan="1">1642764693302</td><td rowspan="1">20813</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.Appmaker.TestCases.CRM_Template</td><td><a href="#m1">tearDownMethod</a></td><td rowspan="2">1642764714198</td><td rowspan="2">-1642764714198</td></tr><tr class="skippedeven"><td><a href="#m2">tearDownMethod</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.Appmaker.TestCases.CRM_Template</td><td><a href="#m3">LogintoApplication</a></td><td rowspan="1">1642764714155</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">createNewCRMapp</a></td><td rowspan="1">1642764714184</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.Appmaker.TestCases.CRM_Template#LogintoApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Appmaker.TestCases.CRM_Template#createNewCRMapp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.Appmaker.TestCases.CRM_Template#setup</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Tring to stsrt Broswser and Getting application ready</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
+	at com.Appmaker.Utility.BrowserFactory.startApplication(BrowserFactory.java:17)
+	at com.Appmaker.Pages.BaseClass.setup(BaseClass.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 34 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 36 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:251)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:50668/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:247)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Appmaker.TestCases.CRM_Template#tearDownMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Appmaker.TestCases.CRM_Template#tearDownMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Appmaker.TestCases.CRM_Template#LogintoApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
+	at com.Appmaker.Utility.BrowserFactory.startApplication(BrowserFactory.java:17)
+	at com.Appmaker.Pages.BaseClass.setup(BaseClass.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 34 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 36 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:251)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:50668/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:247)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.Appmaker.TestCases.CRM_Template#createNewCRMapp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
+	at com.Appmaker.Utility.BrowserFactory.startApplication(BrowserFactory.java:17)
+	at com.Appmaker.Pages.BaseClass.setup(BaseClass.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	... 34 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 36 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Sakunthalas-MacBook-Air.local&apos;, ip: &apos;2402:d000:a500:69b5:5a7:9cd8:f5de:7f09%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:251)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:50668/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:247)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

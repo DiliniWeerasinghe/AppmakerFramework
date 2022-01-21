@@ -2,7 +2,6 @@ package com.Appmaker.Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
@@ -13,12 +12,9 @@ public class BrowserFactory {
 	{
 		if(browserName.contentEquals("Chrome"))
 		{
-			  ChromeOptions options = new ChromeOptions();
-			  
+			
 			System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver");
-		    options.addArguments("--no-sandbox");
-		    driver = new ChromeDriver(options);
-			//driver = new ChromeDriver();
+			driver = new ChromeDriver();
 			
 		}
 		else if(browserName.equals("Firefox"))

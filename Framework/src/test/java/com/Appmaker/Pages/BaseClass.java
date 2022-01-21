@@ -50,7 +50,7 @@ public class BaseClass {
 	@BeforeClass
 	public void setup()
 	{
-		Reporter.log("Tring to stsrt Broswser and Getting application ready", true);
+		Reporter.log("Tring to start Broswser and Getting application ready", true);
 		
 		driver = BrowserFactory.startApplication(driver,config.getBrowser(),config.getstringURL());
 		System.out.println(driver.getTitle());
