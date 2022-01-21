@@ -26,12 +26,12 @@
       <![CDATA[Test completed >> Report Generated]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="168536" started-at="2022-01-20T22:39:51 IST" finished-at="2022-01-20T22:42:40 IST">
+  <suite name="Suite" duration-ms="172570" started-at="2022-01-21T15:08:56 IST" finished-at="2022-01-21T15:11:49 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="168536" started-at="2022-01-20T22:39:51 IST" finished-at="2022-01-20T22:42:40 IST">
+    <test name="Test" duration-ms="172570" started-at="2022-01-21T15:08:56 IST" finished-at="2022-01-21T15:11:49 IST">
       <class name="com.Appmaker.TestCases.CRM_Template">
-        <test-method status="PASS" signature="setUpexcelSuite()[pri:0, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="setUpexcelSuite" is-config="true" duration-ms="2084" started-at="2022-01-20T22:39:49 IST" finished-at="2022-01-20T22:39:51 IST">
+        <test-method status="PASS" signature="setUpexcelSuite()[pri:0, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="setUpexcelSuite" is-config="true" duration-ms="2442" started-at="2022-01-21T15:08:53 IST" finished-at="2022-01-21T15:08:56 IST">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and test is getting ready]]>
@@ -41,7 +41,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpexcelSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="setup" is-config="true" duration-ms="12638" started-at="2022-01-20T22:39:51 IST" finished-at="2022-01-20T22:40:04 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="setup" is-config="true" duration-ms="13887" started-at="2022-01-21T15:08:56 IST" finished-at="2022-01-21T15:09:10 IST">
           <reporter-output>
             <line>
               <![CDATA[Tring to stsrt Broswser and Getting application ready]]>
@@ -51,15 +51,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LogintoApplication()[pri:1, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="LogintoApplication" duration-ms="72999" started-at="2022-01-20T22:40:04 IST" finished-at="2022-01-20T22:41:17 IST">
+        <test-method status="PASS" signature="LogintoApplication()[pri:1, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="LogintoApplication" duration-ms="73288" started-at="2022-01-21T15:09:10 IST" finished-at="2022-01-21T15:10:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogintoApplication -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="tearDownMethod" is-config="true" duration-ms="894" started-at="2022-01-20T22:41:17 IST" finished-at="2022-01-20T22:41:18 IST">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="tearDownMethod" is-config="true" duration-ms="1715" started-at="2022-01-21T15:10:23 IST" finished-at="2022-01-21T15:10:25 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LogintoApplication status=SUCCESS method=CRM_Template.LogintoApplication()[pri:1, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae] output={null}]]]>
+                <![CDATA[[TestResult name=LogintoApplication status=SUCCESS method=CRM_Template.LogintoApplication()[pri:1, instance:com.Appmaker.TestCases.CRM_Template@57f23557] output={null}]]]>
               </value>
             </param>
           </params>
@@ -72,15 +72,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="createNewCRMapp()[pri:2, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="createNewCRMapp" duration-ms="81787" started-at="2022-01-20T22:41:18 IST" finished-at="2022-01-20T22:42:39 IST">
+        <test-method status="PASS" signature="createNewCRMapp()[pri:2, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="createNewCRMapp" duration-ms="83331" started-at="2022-01-21T15:10:25 IST" finished-at="2022-01-21T15:11:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewCRMapp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae]" name="tearDownMethod" is-config="true" duration-ms="171" started-at="2022-01-20T22:42:39 IST" finished-at="2022-01-20T22:42:40 IST">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.Appmaker.TestCases.CRM_Template@57f23557]" name="tearDownMethod" is-config="true" duration-ms="271" started-at="2022-01-21T15:11:48 IST" finished-at="2022-01-21T15:11:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createNewCRMapp status=SUCCESS method=CRM_Template.createNewCRMapp()[pri:2, instance:com.Appmaker.TestCases.CRM_Template@7dc222ae] output={null}]]]>
+                <![CDATA[[TestResult name=createNewCRMapp status=SUCCESS method=CRM_Template.createNewCRMapp()[pri:2, instance:com.Appmaker.TestCases.CRM_Template@57f23557] output={null}]]]>
               </value>
             </param>
           </params>

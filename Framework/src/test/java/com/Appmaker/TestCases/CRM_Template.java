@@ -9,7 +9,7 @@ import com.Appmaker.Pages.LoginPage;
 import com.Appmaker.Utility.Helper;
 
 
-public class CRM_Template extends BaseClass{
+public class CRM_Template extends BaseClass {
 
 	@Test(priority = 1)
 	public void LogintoApplication() throws InterruptedException
@@ -53,7 +53,7 @@ public class CRM_Template extends BaseClass{
 		
 		logger.info("Creating new CRM app");
 		
-		createappnew.createapp();
+		createappnew.createappcrm();
 		
 		
 		createappnew.enterExistingappname(excel.getStringData("Login", 4, 0));
@@ -65,7 +65,7 @@ public class CRM_Template extends BaseClass{
 		logger.pass("Validation pass: Special character validation");
 
 		
-		createappnew.entercorrectAppName();
+		createappnew.entercorrectAppName("CRM");
 		
 		logger.pass("New app created");
 

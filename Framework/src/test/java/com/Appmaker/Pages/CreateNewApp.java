@@ -22,6 +22,7 @@ public class CreateNewApp {
 	}
 	@FindBy(name="Create_New_App") WebElement createappbtn;
 	@FindBy(className="auto-btn-select-CRM-App") WebElement Crmtemplatebtn;
+	@FindBy(name="New_Templates") WebElement templates;
 	@FindBy(name="appName") WebElement appname;
 	@FindBy(name="GetStarted_Btn") WebElement getstartedbtn;
 	@FindBy(className="toast-message") WebElement validationmessag;
@@ -30,22 +31,40 @@ public class CreateNewApp {
 	@FindBy(className="automation-auto-refresh") WebElement autorefreshbtn;
 	
 	
-		public void createapp() throws InterruptedException
+		public void createappcrm() throws InterruptedException
 	{
 		createappbtn.click();
 		System.out.println("Select a app button clicked");
 		Thread.sleep(9000);
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebElement astro = Crmtemplatebtn;
-		js.executeScript("arguments[0].scrollIntoView();", astro);
+		WebElement crm = Crmtemplatebtn;
+		js.executeScript("arguments[0].scrollIntoView();", crm);
 		Thread.sleep(4000);
-	
-		WebElement astro1 = Crmtemplatebtn;
+
+		WebElement crm1 = Crmtemplatebtn;
 		JavascriptExecutor js1= (JavascriptExecutor) driver;
-		js1.executeScript("arguments[0].click();", astro1); 
+		js1.executeScript("arguments[0].click();", crm1); 
 		Thread.sleep(5000);
 	}
+		public void createappastro() throws InterruptedException
+		{
+			createappbtn.click();
+			System.out.println("Select a app button clicked");
+			Thread.sleep(9000);
+
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			WebElement crm = Crmtemplatebtn;
+			js.executeScript("arguments[0].scrollIntoView();", crm);
+			Thread.sleep(4000);
+
+			WebElement crm1 = Crmtemplatebtn;
+			JavascriptExecutor js1= (JavascriptExecutor) driver;
+			js1.executeScript("arguments[0].click();", crm1); 
+			Thread.sleep(5000);
+		}
+		
+		
 		public void enterExistingappname(String appnameenter) throws InterruptedException {
 //Check app naming window validation -----------------------------------------------------------------------------------------------------------
 		
@@ -87,7 +106,7 @@ public class CreateNewApp {
 		Thread.sleep(7000);
 	}		
 
-	public void entercorrectAppName() throws InterruptedException
+	public void entercorrectAppName(String appName) throws InterruptedException
 	{
 		appname.clear();
 		System.out.println("App naming window cleared");
@@ -105,7 +124,7 @@ public class CreateNewApp {
 		String generatedString = buffer.toString();
 
 		WebElement App = appname;
-		App.sendKeys(generatedString +" CRM");
+		App.sendKeys(generatedString +appName);
 		Thread.sleep(2000);
 
 		WebElement Appname = appname;
