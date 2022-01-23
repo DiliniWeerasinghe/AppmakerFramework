@@ -136,7 +136,7 @@ public class LoginPage {
 			
 			System.out.println("Button not found");
 	}	
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		
 		String actual_msg =  Terminateaccountvalidation.getAttribute("innerHTML");
 		String expect = "Login Successful";
