@@ -104,7 +104,7 @@ public class LoginPage {
 			System.out.println("Button not found");
 	
 	}	
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		String actual_msg =  Terminateaccountvalidation.getAttribute("innerHTML");
 		String expect = "You have 9 tries left before the account is locked out";
